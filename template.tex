@@ -8,16 +8,25 @@
 ]{resume} % Use the resume class
 
 \usepackage{ebgaramond} % Use the EB Garamond font
+\usepackage{amsmath,amssymb,amsfonts,amsthm} % Allow math symbols
 
 %------------------------------------------------
 \pagenumbering{arabic}
 
 \usepackage{blindtext}
-\usepackage{lastpage}
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\renewcommand{\headrulewidth}{0pt}
+\usepackage{lastpage,fancyhdr} % Used for page numbering
 \fancyfoot[C]{\thepage \hspace{1pt} of \pageref{LastPage}}
+\pagestyle{fancy}
+
+\renewcommand{\headrulewidth}{0pt}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\PP}{\mathbb{P}}
 
 \name{Evelyn Pidcock} % Your name to appear at the top
 
@@ -28,7 +37,8 @@
 
 %\address{123 Pleasant Lane \\ City, State 12345} % A secondary address (optional)
 
-\address{(970)~$\cdot$~433~$\cdot$~0511 \\ ejpidcock@ucdavis.edu} % Contact information
+%(970)~$\cdot$~433~$\cdot$~0511 \\ 
+\address{ejpidcock@ucdavis.edu} % Contact information
 
 %----------------------------------------------------------------------------------------
 
@@ -61,10 +71,10 @@
 
 \begin{rSection}{Education}
 
-	\textbf{University of California, Davis} \hfill \textit{expected June 2029} \\ 
-	Ph.D., Mathematics \\
-%	Thesis advisor: \textit{Thesis advisor} \\
-%	Thesis title: \textit{The thesis title}
+%	\textbf{University of California, Davis} \hfill \textit{expected June 2029} \\ 
+%	Ph.D., Mathematics \\
+%	Dissertation: \textit{Title} \\
+%	Advisor: \textit{Advisor} \\
 	
 %------------------------------------------------
 
@@ -119,6 +129,7 @@
 
 	\textbf{Graduate Teaching Assistant (University of California, Davis)}
 	\begin{itemize}
+%		\item{Course title (number) $\mid$ Winter 2025.} -- If different than FA24
 		\item{Course title (number) $\mid$ Fall 2024.}
 	\end{itemize}
 
@@ -137,12 +148,21 @@
 %	TALKS SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Talks \& Presentations}
+\begin{rSection}{Invited Talks}
 
-	\begin{itemize}
-		\item{\textit{Tropical Hurwitz Theory and Moduli Spaces}, Southwestern Undergraduate Mathematics Research Conference, University of New Mexico, April 2024 (upcoming).}
-		\item{\textit{Abstract Algebra on the Putnam Exam}, Colorado State University Putnam Club, September 2023}
-	\end{itemize}
+	\begin{enumerate}
+
+		\item \textit{Spec}$(\bar{\Q}(2\pi i))$, Fields Institute, Toronto, ON, June 2024 (upcoming)
+		\begin{itemize}
+			\item \textit{Title TBD}
+		\end{itemize}
+
+		\item \textit{CSU Putnam Club}, Colorado State University, Fort Collins, CO, September 2023
+		\begin{itemize}
+			\item \textit{Abstract Algebra on the Putnam Exam}
+		\end{itemize}
+
+	\end{enumerate}
 	
 \end{rSection}
 
@@ -209,6 +229,7 @@
 %\end{rSection}
 
 %----------------------------------------------------------------------------------------
+
 \fancyfoot{}
 \fancyfoot[C]{Last Updated: \today \\ \thepage \hspace{1pt} of \pageref{LastPage}}
 \end{document}
